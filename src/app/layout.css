@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+
+/* VARIABLES GLOBALES (Charte Graphique) */
+:root {
+  /* Couleurs principales */
+  --color-primary: #2563EB;       /* Ton bleu OnDigital */
+  --color-primary-hover: #1d4ed8; /* Bleu plus foncé pour les survols */
+  --color-white: #ffffff;
+  
+  /* Couleurs de texte & neutres */
+  --color-text-dark: #1f2937;    /* Pour les titres et textes importants */
+  --color-text-muted: #4b5563;   /* Pour les liens et textes secondaires */
+  --color-border: #f3f4f6;/* Ligne fine de séparation */
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden !important;
+  position: relative;
+}
+/* RESET DE BASE & TYPOGRAPHIE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--color-text-dark);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,210 @@
+{
+  "planHash": "600134c632565c167d0549525ca89886c1979a0e672f0af8f30f4c7ba7fa9ebf",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-11-17T18:37:32.8009518Z",
+  "retryCount": 7,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E archives-benin@1.0.0 test\r\n\u003E vitest run\r\n\r\n\u001B[33m(!) Your Vite config uses features that are unsupported by \u0060configLoader: \u0027native\u0027\u0060, which is planned to become the default in a future major version of Vite:\r\n  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a \u0060.mjs\u0060 extension or set \u0060\u0022type\u0022: \u0022module\u0022\u0060 in the closest package.json\r\nSet \u0060VITE_CONFIG_NATIVE_IGNORE_WARNING=true\u0060 to suppress this warning.\u001B[39m\r\n\r\n RUN  v5.1.0 C:/Users/hp/Documents/PROJETS/ulrich soglo\r\n\r\n\r\n Test Files  2 passed (2)\r\n      Tests  5 passed (5)\r\n   Start at  19:36:26\r\n   Duration  886ms (tests 54%, import 27%, transform 10%, worker 8%)\r\n\r\n",
+        "durationMs": 5451,
+        "testResults": {
+          "testFramework": "vitest",
+          "runnerDetectedFrom": "package_json",
+          "testsTotal": 5,
+          "testsPassed": 5,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": false
+        }
+      },
+      {
+        "name": "eslint",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E archives-benin@1.0.0 lint\r\n\u003E eslint\r\n\r\n\r\nC:\\Users\\hp\\Documents\\PROJETS\\ulrich soglo\\src\\app\\layout.tsx\r\n  31:9  warning  Custom fonts not added in \u0060pages/_document.js\u0060 will only load for a single page. This is discouraged. See: https://nextjs.org/docs/messages/no-page-custom-font  @next/next/no-page-custom-font\r\n\r\n\u2716 1 problem (0 errors, 1 warning)\r\n\r\n",
+        "durationMs": 18051
+      },
+      {
+        "name": "typescript-no-emit",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "",
+        "durationMs": 8808
+      },
+      {
+        "name": "next-production-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "\r\n\u003E archives-benin@1.0.0 build\r\n\u003E next build\r\n\r\n\u25B2 Next.js 16.2.9 (Turbopack)\r\n\r\n  Creating an optimized production build ...\r\n\u2713 Compiled successfully in 13.0s\r\n  Running TypeScript ...\r\n  Finished TypeScript in 9.4s ...\r\n  Collecting page data using 3 workers ...\r\n  Generating static pages using 3 workers (0/11) ...\r\n  Generating static pages using 3 workers (2/11) \r\n  Generating static pages using 3 workers (5/11) \r\n  Generating static pages using 3 workers (8/11) \r\n\u2713 Generating static pages using 3 workers (11/11) in 854ms\r\n  Finalizing page optimization ...\r\n\r\nRoute (app)\r\n\u250C \u25CB /\r\n\u251C \u25CB /_not-found\r\n\u251C \u25CB /aide\r\n\u251C \u0192 /api/catalog\r\n\u251C \u0192 /api/catalog/[id]\r\n\u251C \u0192 /api/catalog/filters\r\n\u251C \u0192 /api/health\r\n\u251C \u0192 /api/statistics\r\n\u251C \u0192 /contact\r\n\u251C \u25CB /explorer\r\n\u251C \u0192 /explorer/[id]\r\n\u2514 \u25CB /statistiques\r\n\r\n\r\n\u25CB  (Static)   prerendered as static content\r\n\u0192  (Dynamic)  server-rendered on demand\r\n\r\n",
+        "durationMs": 34660
+      },
+      {
+        "name": "production-health-reports-json-notices",
+        "kind": "http-probe",
+        "verificationMethod": "output-contains",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n{\u0022status\u0022:\u0022healthy\u0022,\u0022timestamp\u0022:\u00222026-11-17T18:37:32.721Z\u0022,\u0022catalog\u0022:{\u0022file\u0022:\u0022public/data/notices.json\u0022,\u0022fileExists\u0022:true,\u0022fileSize\u0022:458410,\u0022lastModified\u0022:\u00222026-11-17T17:38:43.532Z\u0022,\u0022isLoaded\u0022:true,\u0022recordCount\u0022:359,\u0022loadError\u0022:null},\u0022uptime\u0022:1.7470188,\u0022memory\u0022:{\u0022rss\u0022:88379392,\u0022heapTotal\u0022:42033152,\u0022heapUsed\u0022:29830400,\u0022external\u0022:4270553,\u0022arrayBuffers\u0022:530789}}\n--- server output ---\n\r\n\u003E archives-benin@1.0.0 start\r\n\u003E next start --hostname 127.0.0.1 --port 3100\r\n\r\n\u25B2 Next.js 16.2.9\r\n- Local:         http://127.0.0.1:3100\r\n- Network:       http://127.0.0.1:3100\r\n\u2713 Ready in 548ms\r\n",
+        "durationMs": 3327
+      }
+    ],
+    "executions": [
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "test"
+        ],
+        "cwd": "C:\\Users\\hp\\Documents\\PROJETS\\ulrich soglo",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v22.15.1",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "10.9.2",
+        "cleanup": {
+          "RootProcessId": 24244,
+          "Completed": true,
+          "ProcessesObserved": 9,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "eslint",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "run",
+          "lint"
+        ],
+        "cwd": "C:\\Users\\hp\\Documents\\PROJETS\\ulrich soglo",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v22.15.1",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "10.9.2",
+        "cleanup": {
+          "RootProcessId": 18692,
+          "Completed": true,
+          "ProcessesObserved": 7,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "typescript-no-emit",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npx.CMD",
+        "args": [
+          "tsc",
+          "--noEmit"
+        ],
+        "cwd": "C:\\Users\\hp\\Documents\\PROJETS\\ulrich soglo",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": null,
+        "nodeVersion": null,
+        "packageManager": null,
+        "packageManagerExecutable": null,
+        "packageManagerVersion": null,
+        "cleanup": {
+          "RootProcessId": 22812,
+          "Completed": true,
+          "ProcessesObserved": 7,
+          "ProcessesTerminated": 0,
+          "Failure": null
+        }
+      },
+      {
+        "source": "next-production-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\hp\\Documents\\PROJETS\\ulrich soglo",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v22.15.1",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "10.9.2",
+        "cleanup": {
+          "RootProcessId": 25244,
+          "Completed": true,
+          "ProcessesObserved": 19,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "production-health-reports-json-notices",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "run",
+          "start",
+          "--",
+          "--hostname",
+          "127.0.0.1",
+          "--port",
+          "3100"
+        ],
+        "cwd": "C:\\Users\\hp\\Documents\\PROJETS\\ulrich soglo",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v22.15.1",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "10.9.2",
+        "cleanup": {
+          "RootProcessId": 21656,
+          "Completed": true,
+          "ProcessesObserved": 7,
+          "ProcessesTerminated": 5,
+          "Failure": null
+        }
+      }
+    ]
+  }
+}
