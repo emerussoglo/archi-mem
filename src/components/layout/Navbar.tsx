@@ -31,7 +31,7 @@ export function Navbar() {
                 <i className="fa-solid fa-box-archive" />
               </span>
               <span>
-            Archives · Bénin
+                Archives · Bénin
               </span>
             </Link>
           </div>
