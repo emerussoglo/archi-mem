@@ -109,9 +109,6 @@ export default function StatisticsPage() {
             <Button variant="outline" onClick={refresh}>
               <i className="fa-solid fa-rotate" aria-hidden="true" /> Actualiser
             </Button>
-            <Button variant="outline" onClick={exportCsv}>
-              <i className="fa-solid fa-download" aria-hidden="true" /> Exporter CSV
-            </Button>
           </div>
         </div>
 
