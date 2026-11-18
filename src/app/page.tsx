@@ -60,10 +60,10 @@ export default function HomePage() {
           ))}
         </div>
 
-        <Link href="/explorer?advanced=true" className="button button--outline home-hero__advanced">
+        {/* <Link href="/explorer?advanced=true" className="button button--outline home-hero__advanced">
           <i className="fa-solid fa-sliders" aria-hidden="true" />
           Recherche avancée
-        </Link>
+        </Link> */}
 
         <div className="home-metrics" aria-label="Chiffres clés du répertoire">
           <Metric value={formatNumber(stats?.totalNotices)} label="Notices" />
