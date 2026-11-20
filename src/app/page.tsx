@@ -48,7 +48,7 @@ export default function HomePage() {
             onSearch={submitSearch}
             placeholder="Rechercher une ressource, un lieu, une thématique, une cote..."
             showAdvancedButton={false}
-          />
+          /> 
         </div>
 
         <div className="suggestions" aria-label="Suggestions de recherche">
